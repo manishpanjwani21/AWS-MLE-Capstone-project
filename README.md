@@ -82,9 +82,9 @@ Sr No.	Plant Image Class Name	Class Image dataset size
 9.	Strawberry_leaf_scorch	1110 images
 
 
-![S3 Upload Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/s3_dataset_zip_and_folder_snapshot.PNG)
+![S3 Upload Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/s3_dataset_zip_and_folder_snapshot_m.png)
 Dataset Split into Train, Val, Test sets
-![S3 Split dataset Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/s3_plant_datset_split_snapshot.PNG)
+![S3 Split dataset Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/s3_plant_datset_split_snapshot_m.png)
 
 ### Access
 Upload the data to an S3 bucket through the AWS Gateway so that SageMaker has access to the data. 
@@ -127,14 +127,14 @@ However while deploying the model to an endpoint we used the "ml.t2.medium" inst
   * Firstly using the Prdictor class object
   * Secondly using the boto3 client
 ### Deployed Active Endpoint Snapshot
-![Deployed Endpoint Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/deployed_model_endpoint_m.PNG)
+![Deployed Endpoint Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/deployed_model_endpoint_m.png)
 ### Deployed Endpoint Logs Snapshot, showing that the request was recieved and processed successfully by the endpoint
 
 
 ### Free-Form Testing Sample output returned from endpoint Snapshot
-![Test Image_1](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_1_m.PNG)
-![Test Image_2](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_2_m.PNG)
-![Test Image_3](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_3_m.PNG)
-![Test Image_4](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/main/snapshots/test_sample_4_m.PNG)
+![Test Image_1](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_1_m.png)
+![Test Image_2](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_2_m.png)
+![Test Image_3](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_3_m.png)
+![Test Image_4](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_4_m.png)
 
 
