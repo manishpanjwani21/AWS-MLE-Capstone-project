@@ -104,7 +104,7 @@ Upload the data to an S3 bucket through the AWS Gateway so that SageMaker has ac
 * The ResNet50 model with a two Fully connected Linear NN layer's is used for this image classification problem. ResNet-50 is 50 layers deep and is trained on a million images of 1000 categories from the ImageNet database. Furthermore the model has a lot of trainable parameters, which indicates a deep architecture that makes it better for image recognition
 * The optimizer that we will be using for this model is AdamW ( For more info refer : https://pytorch.org/docs/stable/generated/torch.optim.AdamW.html )
 ### Hyperparameter Tuning Sagemaker snapshot
-![HPO Tuning Job Sagemaker](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/best_hyperparam_job_trial_1_summary_m.PNG)
+![HPO Tuning Job Sagemaker](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/snapshots/best_hyperparam_job_trial_1_summary_m.png)
 ### Multiple training jobs triggered by the HyperParameter Tuning Job
 ![HyperParameter Training Job Execution Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/hpo_tuning_training_jobs_trial_1_m.PNG)
 
