@@ -104,27 +104,20 @@ Upload the data to an S3 bucket through the AWS Gateway so that SageMaker has ac
 * The ResNet50 model with a two Fully connected Linear NN layer's is used for this image classification problem. ResNet-50 is 50 layers deep and is trained on a million images of 1000 categories from the ImageNet database. Furthermore the model has a lot of trainable parameters, which indicates a deep architecture that makes it better for image recognition
 * The optimizer that we will be using for this model is AdamW ( For more info refer : https://pytorch.org/docs/stable/generated/torch.optim.AdamW.html )
 ### Hyperparameter Tuning Sagemaker snapshot
-![HPO Tuning Job Sagemaker](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/best_hyperparam_job_trial_1_summary.PNG)
+![HPO Tuning Job Sagemaker](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/best_hyperparam_job_trial_1_summary_m.PNG)
 ### Multiple training jobs triggered by the HyperParameter Tuning Job
-![HyperParameter Training Job Execution Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/hpo_tuning_training_jobs_trial_1.PNG)
-### Best hyperparameter Training Job Accuracy
-![Best Hyperparameters Training Job Log Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/best_hpo_training_job_trial_1_accuracy.PNG)
+![HyperParameter Training Job Execution Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/hpo_tuning_training_jobs_trial_1_m.PNG)
+
 
 ## Debugging and Profiling
 
 We had set the Debugger hook to record and keep track of the Loss Criterion metrics of the process in training and validation/testing phases. The Plot of the Cross entropy loss is shown below:
-![Cross Entropy Loss Tensor Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/training_crossentrophy_loss_graph.PNG)
+![Cross Entropy Loss Tensor Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/training_crossentrophy_loss_graph_m.PNG)
 
 ## Results
 Results look pretty good, as we had utilized the GPU while hyperparameter tuning and training of the fine-tuned ResNet50 model. We used the ml.g4dn.xlarge instance type for the runing the traiing purposes.
 However while deploying the model to an endpoint we used the "ml.t2.medium" instance type to save cost and resources.
 
-### Final Model's Testing Accuracy 
-![Test_accuracy](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/Final_training_testing_metrics.PNG)
-
-
-### Final Model's Validation Accuracy 
-![Val_accuracy](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/Final_training_validation_metrics.PNG)
 
 ## Model Deployment
 * Model was deployed to a "ml.t2.medium" instance type and we used the "endpoint_inference.py" script to setup and deploy our working endpoint.
@@ -134,14 +127,14 @@ However while deploying the model to an endpoint we used the "ml.t2.medium" inst
   * Firstly using the Prdictor class object
   * Secondly using the boto3 client
 ### Deployed Active Endpoint Snapshot
-![Deployed Endpoint Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/deployed_model_endpoint.PNG)
+![Deployed Endpoint Snapshot](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/deployed_model_endpoint_m.PNG)
 ### Deployed Endpoint Logs Snapshot, showing that the request was recieved and processed successfully by the endpoint
 
 
 ### Free-Form Testing Sample output returned from endpoint Snapshot
-![Test Image_1](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_1.PNG)
-![Test Image_2](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_2.PNG)
-![Test Image_3](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_3.PNG)
-![Test Image_4](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_4.PNG)
+![Test Image_1](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_1_m.PNG)
+![Test Image_2](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_2_m.PNG)
+![Test Image_3](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_3_m.PNG)
+![Test Image_4](https://github.com/manishpanjwani21/AWS-MLE-Capstone-project/blob/main/snapshots/test_sample_4_m.PNG)
 
 
